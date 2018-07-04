@@ -37,5 +37,13 @@ highlightjs = true
 [[menu.main]]
     name = "blog"
     weight = 100
-    identifier = "blog"
-    url = "/post/"
+    url = "/blog/"
+[[menu.main]]
+    name = "program"
+    weight = 200
+    url = "/program/"
+[[menu.main]]
+    name = "study"
+    weight = 300
+    url = "/study/"
+	
