@@ -1,6 +1,6 @@
 baseURL = "https://just4tuts.github.io/"
 theme = "hugo-goa"
-author = "M.G"
+author = "Wenmeiyu"
 title = "Wenmeiyu Blog"
 builddrafts = false
 canonifyurls = false

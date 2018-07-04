@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on wenmeiyu blog</title>
-    <link>http://humboldtux.github.io/sbcb-demo/categories/</link>
-    <description>Recent content in Categories on wenmeiyu blog</description>
+    <title>Categories on Wenmeiyu Blog</title>
+    <link>https://just4tuts.github.io/categories/</link>
+    <description>Recent content in Categories on Wenmeiyu Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Code released under the Apache 2.0 license.</copyright>
+    <language>en-US</language>
     
-	<atom:link href="http://humboldtux.github.io/sbcb-demo/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://just4tuts.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
