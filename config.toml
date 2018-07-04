@@ -1,5 +1,5 @@
 baseurl = "http://humboldtux.github.io/sbcb-demo"
-title = "Start Bootstrap Clean Blog"
+title = "wenmeiyu blog"
 canonifyurls = true
 paginate = 10
 theme = "startbootstrap-clean-blog"
@@ -9,7 +9,7 @@ googleAnalytics = "UA-123-45" # delete or comment to disable Google Analytics JS
 disqusShortname = "YourDisqusShortname" #delete or comment to disable Disqus comments
 
 [author]
-  name = "Benoît Benedetti"
+  name = "wenmeiyu"
 
 [params]
   DateForm = "Mon, Jan 2, 2006"
