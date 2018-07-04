@@ -10,12 +10,27 @@ layoutdir = "layouts"
 publishdir = "public"
 
 
+
 [params]
 author = "Wenmeiyu"
-intro = "But nobody is not nothing"
+intro = "You can do it as long as you think!"
 description = "Description"
 authorimage = "mg.jpg"
 dateformat = "Jan 2, 2006"
+
+[[menu.main]]
+    name = "blog"
+    weight = 100
+    url = "/blog/"
+[[menu.main]]
+    name = "program"
+    weight = 200
+    url = "/program/"
+[[menu.main]]
+    name = "study"
+    weight = 300
+    url = "/study/"
+
 
 [params.meta]
 description = "Simple minimalist theme"
@@ -34,16 +49,5 @@ copyright = "copyright @ Rajesh Shenoy"
 poweredby = true
 highlightjs = true
 
-[[menu.main]]
-    name = "blog"
-    weight = 100
-    url = "/blog/"
-[[menu.main]]
-    name = "program"
-    weight = 200
-    url = "/program/"
-[[menu.main]]
-    name = "study"
-    weight = 300
-    url = "/study/"
+
 	
