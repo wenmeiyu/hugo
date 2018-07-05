@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programs on Wenmeiyu Blog</title>
+    <link>https://wenmeiyu.github.io/program/</link>
+    <description>Recent content in Programs on Wenmeiyu Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 05 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wenmeiyu.github.io/program/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Some Code About Manage .xls files.</title>
+      <link>https://wenmeiyu.github.io/program/python_code/</link>
+      <pubDate>Thu, 05 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://wenmeiyu.github.io/program/python_code/</guid>
+      <description>#!/usr/bin/python -- coding: UTF-8 -- import os
+ from pyExcelerator import *
+ sourse_path = os.getcwd() # 当前工作目录
+ path =sourse_path+&amp;rdquo;\data&amp;rdquo; # 数据文件夹目录
+ print path
+ files= os.listdir(path) # 得到数据文件夹下的所有文件名称
+ txtName=files[0] # 获取第一个文件名称
+ exName=txtName.replace(&amp;lsquo;txt&amp;rsquo;,&amp;lsquo;xls&amp;rsquo;) # 将命名execel文件
+ print exName
+ w = Workbook() # 创建workbook
+ ws = w.add_sheet(&amp;lsquo;Sheet1&amp;rsquo;) # 增加一个sheet页&amp;rsquo;Sheet1&amp;rsquo;
+ j=0
+ for file in files: #遍历文件夹
+ fo = open(path+&amp;ldquo;/&amp;rdquo;+file)
+ line = fo.</description>
+    </item>
+    
+  </channel>
+</rss>

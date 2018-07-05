@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="description" content="Simple minimalist theme">
+<meta name="keywords" content="minimalist,blog,goa,hugo,developer">
+
+<base href="https://wenmeiyu.github.io/">
+
+<title>Wenmeiyu Blog</title>
+
+<meta name="generator" content="Hugo 0.42.2" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto+Slab:400,700|Roboto:300,300i,400,400i,500,500i,700,700i">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://wenmeiyu.github.io/css/main.css">
+
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+<body lang="en-US">
+<div class="container">
+
+
+<header class="row text-left title">
+  <h1 class="title">Some Code About Manage .xls files.</h1>
+</header>
+<section id="category-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-left meta">
+        PUBLISHED ON JUL 5, 2018 
+      
+    </h6>
+  </div>
+  
+</section>
+<section id="content-pane" class="row">
+  <div class="col-md-12 text-justify content">
+    
+
+<hr />
+
+<ul>
+<li>#!/usr/bin/python</li>
+
+<li><h1 id="coding-utf-8">-<em>- coding: UTF-8 -</em>-</h1></li>
+
+<li><p>import os</p></li>
+
+<li><p>from pyExcelerator import *</p></li>
+
+<li><p>sourse_path = os.getcwd()  # 当前工作目录</p></li>
+
+<li><p>path =sourse_path+&rdquo;\data&rdquo;  # 数据文件夹目录</p></li>
+
+<li><p>print path</p></li>
+
+<li><p>files= os.listdir(path) # 得到数据文件夹下的所有文件名称</p></li>
+
+<li><p>txtName=files[0] # 获取第一个文件名称</p></li>
+
+<li><p>exName=txtName.replace(&lsquo;txt&rsquo;,&lsquo;xls&rsquo;) # 将命名execel文件</p></li>
+
+<li><p>print exName</p></li>
+
+<li><p>w = Workbook()  # 创建workbook</p></li>
+
+<li><p>ws = w.add_sheet(&lsquo;Sheet1&rsquo;)  # 增加一个sheet页&rsquo;Sheet1&rsquo;</p></li>
+
+<li><p>j=0</p></li>
+
+<li><p>for file in files: #遍历文件夹</p></li>
+
+<li><p>fo = open(path+&ldquo;/&rdquo;+file)</p></li>
+
+<li><p>line = fo.readline()</p></li>
+
+<li><p>line = fo.readline()</p></li>
+
+<li><p>#循环遍历取值</p></li>
+
+<li><p>ws.write(0,j,file)    #第一行输入文件名</p></li>
+
+<li><p>for i in range(1,122):</p></li>
+
+<li><p>line = fo.readline()</p></li>
+
+<li><p>m=float(line[7:12])</p></li>
+
+<li><p>ws.write(i,j,m)</p></li>
+
+<li><p>i=i+1</p></li>
+
+<li><p>j=j+1</p></li>
+
+<li><h2 id="w-save-exname">w.save(exName)</h2></li>
+</ul>
+
+  </div>
+</section>
+<section id="tag-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-right meta">
+      
+    </h6>
+  </div>
+  
+</section>
+
+
+
+
+
+
+
+
+<section id="menu-pane" class="row menu text-center">
+  
+  
+  
+  
+  
+  <h4 class="text-center"><a class="menu-item" href="https://wenmeiyu.github.io/">home</a></h4>
+</section>
+
+
+
+<footer class="row text-center footer">
+  <hr />
+  
+  <h6 class="text-center copyright">copyright @ Rajesh Shenoy</h6>
+  
+  <h6 class="text-center powered">Powered by <a href="https://gohugo.io/">Hugo</a> &amp; <a href="https://github.com/shenoybr/hugo-goa">Goa</a>.</h6>
+  
+  
+</footer>
+
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+
+<script type="text/javascript">
+hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
