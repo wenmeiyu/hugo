@@ -38,10 +38,10 @@
     
     <item>
       <title>Data Mining Notes</title>
-      <link>https://wenmeiyu.github.io/study/notes1/</link>
+      <link>https://wenmeiyu.github.io/study/data_mining_class_notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://wenmeiyu.github.io/study/notes1/</guid>
+      <guid>https://wenmeiyu.github.io/study/data_mining_class_notes/</guid>
       <description> 决策树 节点不纯性的测量：Gini Entropy classification error Gini：多路划分，二元划分 一般多路划分的Gini值比二元划分小 *Gini值越小越可行 熵： 非负性 连续性 极值性 离散转化为连续（可微的）可以更好的优化 GAIN ：C4.5 and ID3中使用 增益率：Gain Ratio？&amp;ndash;避免划分不均匀？ 停止分裂过程：模型不能比原始数据大，所有的叶子节点和为数据的大小 提前终止树的生长 向量表达 大模型压缩为小模型 三种著名的决策树：Cart Id3 C4.5 ，抗噪能力强，一种构建分类模型的非参数方法 决策边界：分类问题就是寻找分类的复杂的超平面 斜决策树&amp;mdash;决策边界为带倾斜角的直线
  分类模型的误差：训练误差&amp;ndash;在训练记录上分类样本比例，泛化误差&amp;ndash;模型在位置记录上的期望误差 一个好的分类模型需要两个误差都较小 模型过拟合：训练数据拟合太好的模型即训练误差较小，其泛化误差可能较高 噪声可能导致过拟合，缺乏代表性样本即样本不足，恶意样本 泛化误差估计：普遍认为模型复杂度对模型过拟合有影响 再代入估计，结合模型复杂度，估计统计上界，使用确定集 处理过拟合的方法：先剪枝，后剪枝自底向上 不平衡类问题：准确率=（TP+TN）/（TP+TN+FP+FN）指标欺骗性&amp;mdash;二分类问题中有99%为一个类 使用多个评价指标：召回率=TP/TP+FN 真正率 真负率等 ROC曲线：斜对角线上方面积越大越好 思考：随机森林 &amp;mdash;  </description>
     </item>
