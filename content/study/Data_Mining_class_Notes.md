@@ -1,6 +1,6 @@
 ---
 title: "Data Mining Notes"
-date: 2018-07-05 14:02
+date: 2018-07-05
 draft: false
 ---
 
