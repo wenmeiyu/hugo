@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="description" content="Simple minimalist theme">
+<meta name="keywords" content="minimalist,blog,goa,hugo,developer">
+
+<base href="https://wenmeiyu.github.io/">
+
+<title>Wenmeiyu Blog</title>
+
+<meta name="generator" content="Hugo 0.42.2" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto+Slab:400,700|Roboto:300,300i,400,400i,500,500i,700,700i">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://wenmeiyu.github.io/css/main.css">
+
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+<body lang="en-US">
+<div class="container">
+
+
+<header class="row text-left title">
+  <h1 class="title">Some Environment Notes</h1>
+</header>
+<section id="category-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-left meta">
+        PUBLISHED ON JUL 5, 2018 
+      
+    </h6>
+  </div>
+  
+</section>
+<section id="content-pane" class="row">
+  <div class="col-md-12 text-justify content">
+    <hr />
+
+<p>搭建gogs环境：</p>
+
+<p>&rdquo;# ielts&rdquo;
+<a href="https://gogs.io/">https://gogs.io/</a>
+<a href="http://210.75.252.89:3000/">http://210.75.252.89:3000/</a></p>
+
+<p>从命令行创建一个新的仓库
+touch README.md
+git init
+git add README.md
+git commit -m &ldquo;first commit&rdquo;
+git remote add origin <a href="http://210.75.252.89:3000/wenmy/Documents.git">http://210.75.252.89:3000/wenmy/Documents.git</a>
+git push -u origin master</p>
+
+<p>从命令行推送已经创建的仓库
+git remote add origin <a href="http://210.75.252.89:3000/wenmy/Documents.git">http://210.75.252.89:3000/wenmy/Documents.git</a>
+git push -u origin master</p>
+
+<hr />
+
+<p>搭建背单词环境：</p>
+
+<p>wmic environment create UserName=&rdquo;<system>&rdquo;,name=&ldquo;GIT&rdquo;,VariableValue=&ldquo;C:\git&rdquo;
+wmic environment where &lsquo;UserName=&rdquo;<system>&rdquo; and name = &ldquo;Path&rdquo;&rsquo; set VariableValue=&ldquo;%PATH%;%GIT%\mingw64\bin;%GIT%\usr\bin;&rdquo;
+mkdir %USERPROFILE%.ssh
+sysdm.cpl
+git clone <a href="https://github.com/ikey4u/quick-vim-setup.git">https://github.com/ikey4u/quick-vim-setup.git</a> %USERPROFILE%\vimfiles
+git clone git@github.com:wenmeiyu/hugoblog.git
+git clone hugo:wenmeiyu/ielts.git</p>
+
+<p>echo &ldquo;# ielts&rdquo; &gt;&gt; README.md
+git init
+git add README.md
+git commit -m &ldquo;first commit&rdquo;
+git remote add origin hugo:wenmeiyu/ielts.git
+git push -u origin master</p>
+
+<p>git remote add origin hugo:wenmeiyu/ielts.git
+git push -u origin master</p>
+
+<p>git config &ndash;global user.email &ldquo;1157515766@qq.com&rdquo;
+git config &ndash;global user.name &ldquo;wenmeiyu&rdquo;</p>
+
+<p>日常命令：
+git add filename.md
+git commit -m &ldquo;first commit info&rdquo;
+git push -u origin master</p>
+
+<p>单词地址
+<a href="https://github.com/lw19960617/IELTS">https://github.com/lw19960617/IELTS</a>
+<a href="https://github.com/wenmeiyu/ielts">https://github.com/wenmeiyu/ielts</a></p>
+
+<hr />
+
+<p>搭建hogo blog环境：
+hugo:wenmeiyu/hugo.git
+hugo:wenmeiyu/wenmeiyu.github.io.git
+hugo new site hugoblog
+cd hugoblog</p>
+
+<p>git init
+git config &ndash;local user.name wenmeiyu
+git config &ndash;local user.email 1157515766@qq.com
+git config &ndash;global core.quotepath false
+git remote add origin hugo:wenmeiyu/hugo.git
+git submodule add hugo:wenmeiyu/wenmeiyu.github.io.git public
+git add .
+git commit -m &ldquo;blog init setup&rdquo;
+git push origin master</p>
+
+<p>cd public
+git config &ndash;local user.name wenmeiyu
+git config &ndash;local user.email 1157515766@qq.com</p>
+
+<p>curl <a href="https://raw.githubusercontent.com/ikey4u/hugo-guide/master/deploy.sh">https://raw.githubusercontent.com/ikey4u/hugo-guide/master/deploy.sh</a> -o deploy.sh</p>
+
+<p>git clone <a href="https://github.com/shenoybr/hugo-goa">https://github.com/shenoybr/hugo-goa</a>
+git clone  <a href="https://github.com/humboldtux/startbootstrap-clean-blog">https://github.com/humboldtux/startbootstrap-clean-blog</a></p>
+
+<p>日常命令：
+hugo new fileclass/filename.md
+bash deploy.sh</p>
+
+<p>博客地址
+<a href="https://wenmeiyu.github.io/">https://wenmeiyu.github.io/</a>
+just4tuts.github.io
+lw19960617.github.io</p>
+
+  </div>
+</section>
+<section id="tag-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-right meta">
+      
+    </h6>
+  </div>
+  
+</section>
+
+
+
+
+
+
+
+
+<section id="menu-pane" class="row menu text-center">
+  
+  
+  
+  
+  
+  <h4 class="text-center"><a class="menu-item" href="https://wenmeiyu.github.io/">home</a></h4>
+</section>
+
+
+
+<footer class="row text-center footer">
+  <hr />
+  
+  <h6 class="text-center copyright">copyright @ Rajesh Shenoy</h6>
+  
+  <h6 class="text-center powered">Powered by <a href="https://gohugo.io/">Hugo</a> &amp; <a href="https://github.com/shenoybr/hugo-goa">Goa</a>.</h6>
+  
+  
+</footer>
+
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+
+<script type="text/javascript">
+hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Wenmeiyu Blog</title>
-    <link>https://wenmeiyu.github.io/</link>
-    <description>Recent content on Wenmeiyu Blog</description>
+    <title>Studies on Wenmeiyu Blog</title>
+    <link>https://wenmeiyu.github.io/study/</link>
+    <description>Recent content in Studies on Wenmeiyu Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Thu, 05 Jul 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://wenmeiyu.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wenmeiyu.github.io/study/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -24,24 +24,6 @@
 搭建背单词环境：
 wmic environment create UserName=&amp;rdquo;&amp;rdquo;,name=&amp;ldquo;GIT&amp;rdquo;,VariableValue=&amp;ldquo;C:\git&amp;rdquo; wmic environment where &amp;lsquo;UserName=&amp;rdquo;&amp;rdquo; and name = &amp;ldquo;Path&amp;rdquo;&amp;rsquo; set VariableValue=&amp;ldquo;%PATH%;%GIT%\mingw64\bin;%GIT%\usr\bin;&amp;rdquo; mkdir %USERPROFILE%.ssh sysdm.cpl git clone https://github.com/ikey4u/quick-vim-setup.git %USERPROFILE%\vimfiles git clone git@github.com:wenmeiyu/hugoblog.git git clone hugo:wenmeiyu/ielts.git
 echo &amp;ldquo;# ielts&amp;rdquo; &amp;gt;&amp;gt; README.</description>
-    </item>
-    
-    <item>
-      <title>I Like For You To Be Still</title>
-      <link>https://wenmeiyu.github.io/blog/article/</link>
-      <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://wenmeiyu.github.io/blog/article/</guid>
-      <description>I like for you to be still
-It is as though you are absent
-And you hear me from far away
-And my voice does not touch you
-It seems as though your eyes had flown away
-And it seems that a kiss had sealed your mouth
-我喜欢你是寂静的：仿佛你消失了一样
-你从远处聆听我，我的声音却无法触及你
-好像你的目光已经游离而去，
-如同一个吻，封缄了你的嘴</description>
     </item>
     
   </channel>
