@@ -5,7 +5,7 @@ draft: false
 ---
 
 ---
-- 决策树
+##决策树
 - 节点不纯性的测量：Gini Entropy classification error
 - Gini：多路划分，二元划分 一般多路划分的Gini值比二元划分小   *Gini值越小越可行
 - 熵：  非负性 连续性 极值性    离散转化为连续（可微的）可以更好的优化
