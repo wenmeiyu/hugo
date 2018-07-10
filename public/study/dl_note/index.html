@@ -41,13 +41,13 @@
 
 
 <header class="row text-left title">
-  <h1 class="title">Data Mining Notes</h1>
+  <h1 class="title">Deep Learning Notes</h1>
 </header>
 <section id="category-pane" class="row meta">
   
   <div class="col-md-12">
     <h6 class="text-left meta">
-        PUBLISHED ON JUL 5, 2018 
+        PUBLISHED ON JUL 10, 2018 
       
     </h6>
   </div>
@@ -55,27 +55,55 @@
 </section>
 <section id="content-pane" class="row">
   <div class="col-md-12 text-justify content">
-    
+    <hr />
 
-<hr />
-
-<p>##决策树
-- 节点不纯性的测量：Gini Entropy classification error
-- Gini：多路划分，二元划分 一般多路划分的Gini值比二元划分小   *Gini值越小越可行
-- 熵：  非负性 连续性 极值性    离散转化为连续（可微的）可以更好的优化
-- GAIN ：C4.5 and ID3中使用
-- 增益率：Gain Ratio？&ndash;避免划分不均匀？
-- 停止分裂过程：模型不能比原始数据大，所有的叶子节点和为数据的大小  提前终止树的生长 向量表达   大模型压缩为小模型
-- 三种著名的决策树：Cart  Id3  C4.5   ，抗噪能力强，一种构建分类模型的非参数方法
-- 决策边界：分类问题就是寻找分类的复杂的超平面  斜决策树&mdash;决策边界为带倾斜角的直线<br />
-- 分类模型的误差：训练误差&ndash;在训练记录上分类样本比例，泛化误差&ndash;模型在位置记录上的期望误差   一个好的分类模型需要两个误差都较小
-- 模型过拟合：训练数据拟合太好的模型即训练误差较小，其泛化误差可能较高   噪声可能导致过拟合，缺乏代表性样本即样本不足，恶意样本
-- 泛化误差估计：普遍认为模型复杂度对模型过拟合有影响   再代入估计，结合模型复杂度，估计统计上界，使用确定集
-- 处理过拟合的方法：先剪枝，后剪枝自底向上
-- 不平衡类问题：准确率=（TP+TN）/（TP+TN+FP+FN）指标欺骗性&mdash;二分类问题中有99%为一个类  使用多个评价指标：召回率=TP/TP+FN 真正率 真负率等
-- ROC曲线：斜对角线上方面积越大越好</p>
-
-<h2 id="思考-随机森林">- 思考：随机森林</h2>
+<p>#深度学习
+##模式识别：
+-   计算机&ndash;记录计算  -&gt; 人&ndash;感知理解信息<br />
+-   通过计算机用数学技术方法来研究模式的自动处理和判别
+-   模式：环境与个体
+- 机器学习：machine  learning   利用计算机模拟实现人类学习行为，以获取新的知识和性能
+- 模式识别过滤垃圾数据？&ndash;数据预处理？
+- 识别基因序列的功能
+- 股票预测&ndash;金融计算
+##模式识别方法：
+###句法模式识别
+-   符号串，树，句法，分类  类似字典
+-   首先提取基元，建立联系，文法规则判断分析
+-   主要方法-自动机技术，
+-   特点：分解的方法，干扰噪声导致抽取特征困难易失误
+###统计模式识别
+-   特征向量，条件概率分布,维度高
+-   主要方法-线性，非线性，数理统计，bayes决策，聚类分析
+-   特点：成熟，
+###人工神经网络法
+-   一种运算模型，大量节点相互连接构成
+-   特点:太多参数难以训练
+###深度神经网络
+-   很多层的神经网络，SVM-单层神经网络
+-   特点：识别边缘特征
+-   应用：物体识别
+###模式识别系统：
+-   特征提取，特征选择，学习和训练，分类识别
+-   分类正确率特征数
+-   维数灾难：n维分成3^n，指数爆炸
+-   把空间分成多个区域，哪个区域某个类别样本最多，分成过多格子，没有样本，无法估计识别
+-   比较简单的模型会有更好的推广性
+-   目标函数=训练误差+正则项
+-   分类器形式，分类器参数
+-   数据特征分布特性初步了解
+-   评价：训练错误率很低但是验证错误率很高，过拟合
+-   监督学习：已知分类
+-   非监督学习：分类未知
+##数学基础：
+###基本定义：
+-   transpose 转置<br />
+-   概率P  0&lt; P <1
+-   概率密度函数p  p > 0
+-   矩阵的性质：AB/=BA   AI=A  A（B+C）=AB+AC  乘法  特征值，方阵
+-   导数：矩阵求导？matrix cookbook
+-   随机变量
+-   方差，协方差，独立性。。。</p>
 
   </div>
 </section>
@@ -99,13 +127,11 @@
 <section id="menu-pane" class="row menu text-center">
   
   
-  <span><a class="menu-item" href="https://wenmeiyu.github.io/study/notes/">&lt; prev | </a></span>
+  <span><a class="menu-item" href="https://wenmeiyu.github.io/study/data_mining_class_notes/">&lt; prev | </a></span>
   
   
   <span><a class="menu-item" href="/study">study</a></span>
   
-  
-  <span><a class="menu-item" href="https://wenmeiyu.github.io/study/dl_note/"> | next &gt;</a></span>
   
   
   <h4 class="text-center"><a class="menu-item" href="https://wenmeiyu.github.io/">home</a></h4>
