@@ -41,13 +41,13 @@
 
 
 <header class="row text-left title">
-  <h1 class="title">Deep Learning Notes</h1>
+  <h1 class="title">Data Mining Notes-neural network</h1>
 </header>
 <section id="category-pane" class="row meta">
   
   <div class="col-md-12">
     <h6 class="text-left meta">
-        PUBLISHED ON JUL 10, 2018 
+        PUBLISHED ON JUL 12, 2018 
       
     </h6>
   </div>
@@ -59,95 +59,66 @@
 
 <hr />
 
-<h1 id="深度学习">深度学习</h1>
-
-<h2 id="模式识别">模式识别：</h2>
-
 <ul>
-<li>计算机&ndash;记录计算  -&gt; 人&ndash;感知理解信息<br /></li>
-<li>通过计算机用数学技术方法来研究模式的自动处理和判别</li>
-<li>模式：环境与个体</li>
-<li>机器学习：machine  learning   利用计算机模拟实现人类学习行为，以获取新的知识和性能</li>
-<li>模式识别过滤垃圾数据？&ndash;数据预处理？</li>
-<li>识别基因序列的功能</li>
+<li>多模型集成</li>
+<li>偏置项？转递函数？权重-向前向后学习的结果</li>
+<li>向前学习：计算每个节点的影响  一个网络结构  初始化设置的权重</li>
+<li>向后学习backpropagation：求解  梯度下降法求导  目标求导的过程</li>
+<li>不断和实际值比较，获得最佳残差</li>
+<li>目标函数=损失函数？</li>
 
-<li><p>股票预测&ndash;金融计算</p>
+<li><p>一步一步逼近最优解
+chain rule  劣势规则？  practice  求导</p>
 
-<h2 id="模式识别方法">模式识别方法：</h2>
+<h2 id="激活函数-一般神经元上选择非线性函数">激活函数：  一般神经元上选择非线性函数-</h2></li>
 
-<h3 id="句法模式识别">句法模式识别</h3></li>
+<li><p>sigmoid：它的求导简单  结果映射到01之间，可以表示成概率  最后一层常用  针对二分类问题</p></li>
 
-<li><p>符号串，树，句法，分类  类似字典</p></li>
+<li><p>tanh： cnn 和 lstm常用  出最后一层之外  映射到-1到1之间，使均值为0</p></li>
 
-<li><p>首先提取基元，建立联系，文法规则判断分析</p></li>
+<li><p>ReLU Rectified Linear Unit:收敛更快  网络很深时，例如cnn  文本领域很少使用，信息不规整，信息更复杂</p></li>
 
-<li><p>主要方法-自动机技术，</p></li>
+<li><p>改进的ReLU：Leaky ReLU</p></li>
 
-<li><p>特点：分解的方法，干扰噪声导致抽取特征困难易失误</p>
+<li><p>Softmax： 一般不在中间层用  最后一层常用   针对多分类问题</p></li>
 
-<h3 id="统计模式识别">统计模式识别</h3></li>
+<li><p>batch_size：更新参数，算完部分例子之后更新</p></li>
 
-<li><p>特征向量，条件概率分布,维度高</p></li>
+<li><h2 id="凸优化问题-可以得到全局最优解">凸优化问题-可以得到全局最优解</h2>
 
-<li><p>主要方法-线性，非线性，数理统计，bayes决策，聚类分析</p></li>
+<h1 id="优化模型-提高算法-解决过拟合问题-学习率的设置-权值初始化">优化模型，提高算法，解决过拟合问题，学习率的设置，权值初始化</h1></li>
 
-<li><p>特点：成熟，</p>
+<li><p>深度神经网络的三步：向前学习，向后学习，权值更新</p></li>
 
-<h3 id="人工神经网络法">人工神经网络法</h3></li>
+<li><p>SGD Stochastic  gradient  descent  随机梯度下降：更快的收敛，加速BSD？一个一个样例计算  is often  better 防止过拟合</p></li>
 
-<li><p>一种运算模型，大量节点相互连接构成</p></li>
+<li><p>Mini-batch Gradient Descent</p></li>
 
-<li><p>特点:太多参数难以训练</p>
+<li><p>归一化 ：</p></li>
 
-<h3 id="深度神经网络">深度神经网络</h3></li>
+<li><p>防止过拟合的方法：</p></li>
 
-<li><p>很多层的神经网络，SVM-单层神经网络</p></li>
+<li><p>batch normalization：</p></li>
 
-<li><p>特点：识别边缘特征</p></li>
+<li><p>L1-regularization 可以做特征选择   L2-regularization</p></li>
 
-<li><p>应用：物体识别</p>
+<li><p>Early  stopping  早期结束  当连续两三次epoch不变时暂停</p></li>
 
-<h3 id="模式识别系统">模式识别系统：</h3></li>
+<li><p>Dropout ：每次选择性地抛弃一些神经元  防止过拟合，主要应用于深度学习  没有理论验证  调参每一层抛弃多少神经元</p></li>
 
-<li><p>特征提取，特征选择，学习和训练，分类识别</p></li>
+<li><p>学习率，学习率下降到最后会震荡，</p>
 
-<li><p>分类正确率特征数</p></li>
+<h2 id="降低学习率的方法">降低学习率的方法：</h2></li>
 
-<li><p>维数灾难：n维分成3^n，指数爆炸</p></li>
+<li><p>Adagrad：自适应</p></li>
 
-<li><p>把空间分成多个区域，哪个区域某个类别样本最多，分成过多格子，没有样本，无法估计识别</p></li>
+<li><p>RMSprop  :</p></li>
 
-<li><p>比较简单的模型会有更好的推广性</p></li>
+<li><p>Adadelta  :</p></li>
 
-<li><p>目标函数=训练误差+正则项</p></li>
+<li><p>Adam:</p></li>
 
-<li><p>分类器形式，分类器参数</p></li>
-
-<li><p>数据特征分布特性初步了解</p></li>
-
-<li><p>评价：训练错误率很低但是验证错误率很高，过拟合</p></li>
-
-<li><p>监督学习：已知分类</p></li>
-
-<li><p>非监督学习：分类未知</p>
-
-<h2 id="数学基础">数学基础：</h2>
-
-<h3 id="基本定义">基本定义：</h3></li>
-
-<li><p>transpose 转置</p></li>
-
-<li><p>概率P  0&lt; P &lt;1</p></li>
-
-<li><p>概率密度函数p  p &gt; 0</p></li>
-
-<li><p>矩阵的性质：AB/=BA   AI=A  A（B+C）=AB+AC  乘法  特征值，方阵</p></li>
-
-<li><p>导数：矩阵求导？matrix cookbook</p></li>
-
-<li><p>随机变量</p></li>
-
-<li><p>方差，协方差，独立性。。。</p></li>
+<li><p>AdaSecant:</p></li>
 </ul>
 
   </div>
@@ -172,13 +143,11 @@
 <section id="menu-pane" class="row menu text-center">
   
   
-  <span><a class="menu-item" href="https://wenmeiyu.github.io/study/data_mining_class_notes/">&lt; prev | </a></span>
+  <span><a class="menu-item" href="https://wenmeiyu.github.io/study/dl_note/">&lt; prev | </a></span>
   
   
   <span><a class="menu-item" href="/study">study</a></span>
   
-  
-  <span><a class="menu-item" href="https://wenmeiyu.github.io/study/dm_note/"> | next &gt;</a></span>
   
   
   <h4 class="text-center"><a class="menu-item" href="https://wenmeiyu.github.io/">home</a></h4>
