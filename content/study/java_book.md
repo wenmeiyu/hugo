@@ -14,5 +14,8 @@ draft: false
 - 很基础的一本书，很详细，适合入门，基本看完就可以入门了，Java最主要的还是面向对象的思想
 - 下面连接是视频，还有笔记，很适合初学者看
 - 链接: https://pan.baidu.com/s/1_p22y-XwXX1M0v-0dpm77Q 密码: hka2
+- 然后就是Java手册啦
+- 下面连接是Java中文手册，有条件的可以在网上查看英文版
+- http://tool.oschina.net/apidocs/apidoc?api=jdk-zh
 ## Java进阶-web开发
 - 
