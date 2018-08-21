@@ -6,10 +6,33 @@
     <description>Recent content on Wenmeiyu Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Thu, 12 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://wenmeiyu.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Some Java Study Books And Videos</title>
+      <link>https://wenmeiyu.github.io/study/java_book/</link>
+      <pubDate>Tue, 21 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://wenmeiyu.github.io/study/java_book/</guid>
+      <description> Java入门初级  第一本必读书籍《Head First Java》 不过我觉得这本书应该作为兴趣爱好来看，属课外辅助书籍，很经典。 下面连接是中文版，有条件可以在网上下载英文版看 链接: https://pan.baidu.com/s/1FoD9hjT5rb30rrovE99B7A 密码: dum6 基础书籍《Java开发实战经典》 很基础的一本书，很详细，适合入门，基本看完就可以入门了，Java最主要的还是面向对象的思想 下面连接是视频，很适合初学者看 链接: https://pan.baidu.com/s/1_p22y-XwXX1M0v-0dpm77Q 密码: hka2
+Java进阶-web开发   </description>
+    </item>
+    
+    <item>
+      <title>Deep Learning Notes</title>
+      <link>https://wenmeiyu.github.io/study/dl_note2/</link>
+      <pubDate>Tue, 24 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://wenmeiyu.github.io/study/dl_note2/</guid>
+      <description> 计算机视觉与深度学习 概率论相关概念  伯努利分布 零一分布，两点分布 二项分布 n次独立的伯努利试验 sigmoid函数 s(x)=1/(1+e^-x) 单调递增 值域=[0，1] 神经网络的阈值函数 高斯分布 正态分布 高斯函数 中心极限定理 N维正态分布 信息论 信息量I(x)=-logP(x) 概率越小信息量越大 熵H(x)=IEx~P[I(x)] 信息量的数学期望 KL衡量分布间的差异 多变量正态分布 均值决定中心点 方差决定联展程度 协方差矩阵，如果xi与xj相互独立，则非对角线的元素都是0 马氏距离 高斯变量的线性变换仍然服从高斯分布 把协方差变成单位阵
+分类 两类情况 贝叶斯定理？
+ 参数估计 最大似然估计 原理-概率大的更可能发生
+ 贝叶斯参数估计 随机变量 参数的先验分布 后验概率密度
+  </description>
+    </item>
     
     <item>
       <title>Data Mining Notes-neural network</title>
